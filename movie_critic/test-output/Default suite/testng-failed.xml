@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.javapoint.controller.ReviewControllerTest">
+        <methods>
+          <include name="addReview"/>
+          <include name="updateReview"/>
+          <include name="afterTest"/>
+          <include name="getReview"/>
+          <include name="beforeTest"/>
+          <include name="deleteReview"/>
+        </methods>
+      </class> <!-- com.javapoint.controller.ReviewControllerTest -->
+      <class name="com.javapoint.controller.RoleControllerTest">
+        <methods>
+          <include name="addRole"/>
+          <include name="afterTest"/>
+          <include name="getRole"/>
+          <include name="updateRole"/>
+          <include name="beforeTest"/>
+          <include name="deleteRole"/>
+        </methods>
+      </class> <!-- com.javapoint.controller.RoleControllerTest -->
+      <class name="com.javapoint.controller.MovieControllerTest">
+        <methods>
+          <include name="updateMovie"/>
+          <include name="beforeTest"/>
+          <include name="deleteMovie"/>
+          <include name="afterTest"/>
+          <include name="getMovie"/>
+          <include name="addMovie"/>
+        </methods>
+      </class> <!-- com.javapoint.controller.MovieControllerTest -->
+      <class name="com.javapoint.controller.ActorControllerTest">
+        <methods>
+          <include name="deleteActor"/>
+          <include name="beforeTest"/>
+          <include name="addActor"/>
+          <include name="getActor"/>
+          <include name="updateActor"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.javapoint.controller.ActorControllerTest -->
+      <class name="com.javapoint.controller.UserControllerTest">
+        <methods>
+          <include name="deleteUser"/>
+          <include name="getUser"/>
+          <include name="addUser"/>
+          <include name="afterTest"/>
+          <include name="updateUser"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.javapoint.controller.UserControllerTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

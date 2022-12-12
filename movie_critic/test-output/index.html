@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ActorControllerTest" class="method navigator-link" hash-for-method="addActor">addActor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.MovieControllerTest" class="method navigator-link" hash-for-method="addMovie">addMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ReviewControllerTest" class="method navigator-link" hash-for-method="addReview">addReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.RoleControllerTest" class="method navigator-link" hash-for-method="addRole">addRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.UserControllerTest" class="method navigator-link" hash-for-method="addUser">addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ActorControllerTest" class="method navigator-link" hash-for-method="deleteActor">deleteActor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.MovieControllerTest" class="method navigator-link" hash-for-method="deleteMovie">deleteMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ReviewControllerTest" class="method navigator-link" hash-for-method="deleteReview">deleteReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.RoleControllerTest" class="method navigator-link" hash-for-method="deleteRole">deleteRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.UserControllerTest" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ActorControllerTest" class="method navigator-link" hash-for-method="getActor">getActor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.MovieControllerTest" class="method navigator-link" hash-for-method="getMovie">getMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ReviewControllerTest" class="method navigator-link" hash-for-method="getReview">getReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.RoleControllerTest" class="method navigator-link" hash-for-method="getRole">getRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.UserControllerTest" class="method navigator-link" hash-for-method="getUser">getUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ActorControllerTest" class="method navigator-link" hash-for-method="updateActor">updateActor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.MovieControllerTest" class="method navigator-link" hash-for-method="updateMovie">updateMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.ReviewControllerTest" class="method navigator-link" hash-for-method="updateReview">updateReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.RoleControllerTest" class="method navigator-link" hash-for-method="updateRole">updateRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.javapoint.controller.UserControllerTest" class="method navigator-link" hash-for-method="updateUser">updateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.javapoint.controller.ReviewControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addReview">
+                  </a> <!-- addReview -->
+                  <span class="method-name">addReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteReview">
+                  </a> <!-- deleteReview -->
+                  <span class="method-name">deleteReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getReview">
+                  </a> <!-- getReview -->
+                  <span class="method-name">getReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateReview">
+                  </a> <!-- updateReview -->
+                  <span class="method-name">updateReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.javapoint.controller.ActorControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addActor">
+                  </a> <!-- addActor -->
+                  <span class="method-name">addActor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteActor">
+                  </a> <!-- deleteActor -->
+                  <span class="method-name">deleteActor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getActor">
+                  </a> <!-- getActor -->
+                  <span class="method-name">getActor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateActor">
+                  </a> <!-- updateActor -->
+                  <span class="method-name">updateActor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.javapoint.controller.UserControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser">
+                  </a> <!-- addUser -->
+                  <span class="method-name">addUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser">
+                  </a> <!-- getUser -->
+                  <span class="method-name">getUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser">
+                  </a> <!-- updateUser -->
+                  <span class="method-name">updateUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.javapoint.controller.MovieControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMovie">
+                  </a> <!-- addMovie -->
+                  <span class="method-name">addMovie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteMovie">
+                  </a> <!-- deleteMovie -->
+                  <span class="method-name">deleteMovie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMovie">
+                  </a> <!-- getMovie -->
+                  <span class="method-name">getMovie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateMovie">
+                  </a> <!-- updateMovie -->
+                  <span class="method-name">updateMovie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.javapoint.controller.RoleControllerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRole">
+                  </a> <!-- addRole -->
+                  <span class="method-name">addRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRole">
+                  </a> <!-- deleteRole -->
+                  <span class="method-name">deleteRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRole">
+                  </a> <!-- getRole -->
+                  <span class="method-name">getRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateRole">
+                  </a> <!-- updateRole -->
+                  <span class="method-name">updateRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/7y/6hfxj1qx5q3bph1r96j16wm80000gq/T/testng-eclipse--10418029/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.javapoint.entities.User&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.ExamplesApplicationTests&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.MovieController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.repository.MovieRepo&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.ActorService&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.LoginController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.entities.Actor&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.repository.UserRepo&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.dto.UserRegistrationDto&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.MovieControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.ActorController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.repository.ReviewRepo&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.entities.Movie&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.UserService&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.repository.ActorRepo&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.ExamplesApplication&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.ReviewService&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.repository.RoleRepo&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.UserControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.RegistrationService&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.ActorControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.entities.Role&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.MovieServices&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.serviceImpl.RegistrationServiceImpl&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.config.SecurityCofiguration&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.RoleController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.service.RoleService&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.entities.Review&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.UserController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.ReviewControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.ReviewController&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.RoleControllerTest&quot;/&gt;
+      &lt;class name=&quot;com.javapoint.controller.RegistrationController&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (33 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addMovie')
+data.setCell(0, 2, 'com.javapoint.controller.MovieControllerTest')
+data.setCell(0, 3, 597);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getActor')
+data.setCell(1, 2, 'com.javapoint.controller.ActorControllerTest')
+data.setCell(1, 3, 207);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addReview')
+data.setCell(2, 2, 'com.javapoint.controller.ReviewControllerTest')
+data.setCell(2, 3, 176);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateMovie')
+data.setCell(3, 2, 'com.javapoint.controller.MovieControllerTest')
+data.setCell(3, 3, 173);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getMovie')
+data.setCell(4, 2, 'com.javapoint.controller.MovieControllerTest')
+data.setCell(4, 3, 162);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addUser')
+data.setCell(5, 2, 'com.javapoint.controller.UserControllerTest')
+data.setCell(5, 3, 156);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addActor')
+data.setCell(6, 2, 'com.javapoint.controller.ActorControllerTest')
+data.setCell(6, 3, 147);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteRole')
+data.setCell(7, 2, 'com.javapoint.controller.RoleControllerTest')
+data.setCell(7, 3, 145);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addRole')
+data.setCell(8, 2, 'com.javapoint.controller.RoleControllerTest')
+data.setCell(8, 3, 143);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateUser')
+data.setCell(9, 2, 'com.javapoint.controller.UserControllerTest')
+data.setCell(9, 3, 141);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'deleteUser')
+data.setCell(10, 2, 'com.javapoint.controller.UserControllerTest')
+data.setCell(10, 3, 140);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'deleteMovie')
+data.setCell(11, 2, 'com.javapoint.controller.MovieControllerTest')
+data.setCell(11, 3, 140);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getUser')
+data.setCell(12, 2, 'com.javapoint.controller.UserControllerTest')
+data.setCell(12, 3, 139);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'deleteActor')
+data.setCell(13, 2, 'com.javapoint.controller.ActorControllerTest')
+data.setCell(13, 3, 132);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateActor')
+data.setCell(14, 2, 'com.javapoint.controller.ActorControllerTest')
+data.setCell(14, 3, 131);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'updateReview')
+data.setCell(15, 2, 'com.javapoint.controller.ReviewControllerTest')
+data.setCell(15, 3, 130);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getReview')
+data.setCell(16, 2, 'com.javapoint.controller.ReviewControllerTest')
+data.setCell(16, 3, 130);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'deleteReview')
+data.setCell(17, 2, 'com.javapoint.controller.ReviewControllerTest')
+data.setCell(17, 3, 129);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getRole')
+data.setCell(18, 2, 'com.javapoint.controller.RoleControllerTest')
+data.setCell(18, 3, 125);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'updateRole')
+data.setCell(19, 2, 'com.javapoint.controller.RoleControllerTest')
+data.setCell(19, 3, 125);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ActorControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.MovieControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ReviewControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">292 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.RoleControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">296 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.UserControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">299 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.MovieControllerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addMovie</span>
+                <span class="method-start">336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateMovie</span>
+                <span class="method-start">946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMovie</span>
+                <span class="method-start">1124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteMovie</span>
+                <span class="method-start">1291 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.UserControllerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addUser</span>
+                <span class="method-start">1437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser</span>
+                <span class="method-start">1600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser</span>
+                <span class="method-start">1750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">1894 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ActorControllerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addActor</span>
+                <span class="method-start">2036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateActor</span>
+                <span class="method-start">2189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getActor</span>
+                <span class="method-start">2322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteActor</span>
+                <span class="method-start">2534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ReviewControllerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addReview</span>
+                <span class="method-start">2671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateReview</span>
+                <span class="method-start">2852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getReview</span>
+                <span class="method-start">2990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteReview</span>
+                <span class="method-start">3121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.RoleControllerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addRole</span>
+                <span class="method-start">3252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateRole</span>
+                <span class="method-start">3396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRole</span>
+                <span class="method-start">3523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRole</span>
+                <span class="method-start">3651 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ActorControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3798 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.MovieControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3807 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.ReviewControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3809 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.RoleControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3812 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.javapoint.controller.UserControllerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3815 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
