@@ -10,7 +10,7 @@ import com.javapoint.entities.Movie;
 import com.javapoint.repository.MovieRepo;
 
 @Service
-public class MovieServices {
+public class MovieService {
 	@Autowired
 	private MovieRepo movieRepo;
 	public void saveMoviePoster(MultipartFile file) 
@@ -45,5 +45,6 @@ public class MovieServices {
 	public Movie updateMovieDetails(Movie movie) {
 		return movieRepo.save(movie);
 	}
+	
 
 }

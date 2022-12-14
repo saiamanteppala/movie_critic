@@ -19,14 +19,14 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Override
 	public User save(UserRegistrationDto userRegistrationDto) 
 	{
-		User user = new User(userRegistrationDto.getFirst_name(), 
+		User user = new User(0, userRegistrationDto.getFirst_name(), 
 							 userRegistrationDto.getLast_name(),
 							 userRegistrationDto.getGender(), 
 							 userRegistrationDto.getAge(), 
 							 userRegistrationDto.getContact(),
 							 userRegistrationDto.getEmail(), 
 							 userRegistrationDto.getUser_name(),
-							 Arrays.asList(new Role("ROLE_USER")));
+							 null, Arrays.asList(new Role("ROLE_USER")));
 		return userRepo.save(user);
 	}
 }

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.javapoint.entities.Movie;
 import com.javapoint.repository.MovieRepo;
-import com.javapoint.service.MovieServices;
+import com.javapoint.service.MovieService;
 
 
 @RestController
@@ -24,7 +24,7 @@ public class MovieController {
 	MovieRepo movieRepo;
 	
 	@Autowired
-	MovieServices movieServices;
+	MovieService movieServices;
 
 	
 	@PostMapping("/save/movieDetails")

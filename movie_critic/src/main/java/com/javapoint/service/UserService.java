@@ -28,6 +28,7 @@ public class UserService {
 	public void deleteUser(User user) {
 		userRepo.delete(user);
 	}
+	
 	public boolean ValidateUserLogin(UserRegistrationDto userDto) {
 		// TODO Auto-generated method stub
 		User user = userRepo.findByEmail(userDto.getEmail());

@@ -11,4 +11,5 @@ import com.javapoint.entities.User;
 	User findByEmail(String email);
 	
 	User findByPassword(String Password);
+
 }

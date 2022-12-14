@@ -7,11 +7,11 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class ExamplesApplication {
+public class MovieCriticApplication {
 	
 	public static void main(String[] args) 
 	{
-		SpringApplication.run(ExamplesApplication.class, args);
+		SpringApplication.run(MovieCriticApplication.class, args);
 	}
 
 	@Bean

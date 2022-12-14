@@ -37,7 +37,7 @@ public class ReviewControllerTest {
 
 	@Test
 	public void addReview() throws IOException, ParseException {
-		String addURI = "http://localhost:8080/api/save/ReviewDetails";
+		String addURI = "http://localhost:8080/api/save/ReviewDetails/6/15";
 		String name = "Amansai";
 		String password = "Amansai10@";
 		String authString = name + ":" + password;
