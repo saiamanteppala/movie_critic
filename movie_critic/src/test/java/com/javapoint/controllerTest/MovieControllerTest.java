@@ -1,4 +1,4 @@
-package com.javapoint.controller;
+package com.javapoint.controllerTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.springframework.http.ResponseEntity;

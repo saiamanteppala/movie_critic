@@ -1,5 +1,14 @@
-package com.javapoint.controller;
-import static org.junit.jupiter.api.Assertions.*;
+package com.javapoint.controllerTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.Base64;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.testng.Assert;
@@ -7,24 +16,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
-import java.util.Base64;
-import java.io.IOException;
-import java.text.ParseException;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
 
-class UserControllerTest {
+public class ActorControllerTest {
 	private String responseBody;
 	public String responseBodyPOST;
-	final static Logger logger = Logger.getLogger(UserControllerTest.class);
+	final static Logger logger = Logger.getLogger(ActorControllerTest.class);
 	// RESTTemplate Object
 	private RestTemplate restTemplate;
-	// User ID
-	private long userId;
+	// Actor ID
+	private long actorId;
 	// Create Response Entity - Stores HTTPStatus Code, Response Body, etc
 	private ResponseEntity<String> response;
 
@@ -36,8 +36,8 @@ class UserControllerTest {
 	}
 
 	@Test
-	public void addUser() throws IOException, ParseException {
-		String addURI = "http://localhost:8080/api/save/UserDetails";
+	public void addActor() throws IOException, ParseException {
+		String addURI = "http://localhost:8080/api/save/ActorDetails";
 		String name = "Amansai";
 		String password = "Amansai10@";
 		String authString = name + ":" + password;
@@ -48,28 +48,26 @@ class UserControllerTest {
 		headers.add("Content-Type", "application/json");
 		headers.add("Authorization", "Basic " + authStringEnc);
 		logger.info("Add URL :" + addURI);
-		String jsonBody = "{ \"first_name\":\"Aman\",\n" + "\"last_name\":\"Sai\",\n" + "\"gender\":\"male\",\n"
-				+ "\"age\":\"23\",\n" + "\"contact_number\":\"12345678\",\n" + "\"email\": \"amansaileo@gmail.com\",\n"
-				+ "\"user_name\":\"Amansaileo\",\n" + "\"password\": \"123456789\"}";
+		String jsonBody = "{ \"actor_name\":\"Balayya\" }";
 		System.out.println("\n\n" + jsonBody);
 		HttpEntity<String> entity = new HttpEntity<String>(jsonBody, headers);
-		// POST Method to Add New user
+		// POST Method to Add New Actor
 		response = this.restTemplate.postForEntity(addURI, entity, String.class);
 		responseBodyPOST = response.getBody();
 		// Write response to file
-		responseBody = response.getBody();
+		responseBody = response.getBody().toString();
 		System.out.println("responseBody;" + responseBody);
 		// Get ID from the Response object
-		userId = getUserIdFromResponse(responseBody);
-		System.out.println("userId is :" + userId);
-		// Check if the added User is present in the response body.
-		Assert.assertTrue(userId > 0);
+		actorId = getActorIdFromResponse(responseBody);
+		System.out.println("actorId is :" + actorId);
+		// Check if the added Actor is present in the response body.
+		Assert.assertTrue(actorId > 0);
 		// Check if the status code is 201
 		assertEquals(response.getStatusCode(), HttpStatus.OK);
-		logger.info("user is Added successfully userId:" + userId);
+		logger.info("Actor is Added successfully userId:" + actorId);
 	}
-
-	public static long getUserIdFromResponse(String json) {
+	
+	public static long getActorIdFromResponse(String json) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonResponseObject = new JSONObject();
 		try {
@@ -77,51 +75,57 @@ class UserControllerTest {
 		} catch (org.json.simple.parser.ParseException e) {
 			e.printStackTrace();
 		}
-		long id = (Long) jsonResponseObject.get("user_id");
-		logger.debug("User id: " + id);
+		long id = (Long) jsonResponseObject.get("actor_id");
+		logger.debug("Actor id: " + id);
 		return id;
 	}
 
-	@Test(dependsOnMethods = "addUser", enabled = true)
-	public void updateUser() throws IOException, ParseException {
-		String updateURI = "http://localhost:8080/api/updateUserDetails";
+	@Test(dependsOnMethods = "addActor", enabled = true)
+	public void updateActor() throws IOException, ParseException {
+		String updateURI = "http://localhost:8080/api/updateActorDetails";
 		String name = "Amansai";
 		String password = "Amansai10@";
 		String authString = name + ":" + password;
 		String authStringEnc = Base64.getEncoder().encodeToString(authString.getBytes());
 		System.out.println("Base64 encoded auth string: " + authStringEnc);
 		logger.info("Update URL :" + updateURI);
+
 		responseBodyPOST = response.getBody();
+
 		JSONParser parser = new JSONParser();
 		JSONObject jsonResponseObject = new JSONObject();
+		// Object obj = new Object();
 		try {
 			jsonResponseObject = (JSONObject) parser.parse(responseBodyPOST);
 		} catch (org.json.simple.parser.ParseException e) {
 			e.printStackTrace();
 		}
-		jsonResponseObject.put("first_name", "AMAN");
+		// jsonResponseObject = (JSONObject) obj;
+		jsonResponseObject.put("actor_name", "Balayya");
+		
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Accept", "application/json");
 		headers.add("Content-Type", "application/json");
 		headers.add("Authorization", "Basic " + authStringEnc);
 		HttpEntity<String> entity = new HttpEntity<String>(jsonResponseObject.toJSONString(), headers);
 		System.out.printf("entity", entity);
-		// PUT Method to Update the existing user
+		// PUT Method to Update the existing Actor
 		// NOTE that I have Not used restTemplate.put as it's void and we need response
 		// for verification
 		response = restTemplate.exchange(updateURI, HttpMethod.PUT, entity, String.class);
 		logger.info(response);
 		responseBody = response.getBody().toString();
 		System.out.println("Update Response Body :" + responseBody);
-		// Check if the updated user is present in the response body.
+		// Check if the updated actor is present in the response body.	
 		// Check if the status code is 200
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.OK);
-		logger.info("User Name is Updated successfully userId:" + userId);
+		logger.info("User Name is Updated successfully actorId:" + actorId);
 	}
 
-	@Test(dependsOnMethods = "updateUser", enabled = true)
-	void getUser() throws IOException, ParseException {
-		String getURI = "http://localhost:8080/api/getUserDetailsById/" + this.userId;
+	@Test(dependsOnMethods = "updateActor", enabled = true)
+	void getActor() throws IOException, ParseException 
+	{
+		String getURI = "http://localhost:8080/api/getActorDetailsById/" + this.actorId;
 		String name = "Amansai";
 		String password = "Amansai10@";
 		String authString = name + ":" + password;
@@ -135,45 +139,47 @@ class UserControllerTest {
 		HttpEntity<String> request = new HttpEntity<String>(headers);
 		ResponseEntity<String> response = restTemplate.exchange(getURI, HttpMethod.GET, request, String.class);
 		responseBodyPOST = response.getBody();
-		// GET Method to Get existing user
+		// GET Method to Get existing Actor
 		// Write response to file
 		responseBody = response.getBody().toString();
 		System.out.println("GET Response Body :" + responseBody);
-		// Check if the added User ID is present in the response body.
+		// Check if the added Actor ID is present in the response body.
 		// Check if the status code is 200
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.OK);
-		logger.info("User is retrieved successfully userId:" + userId);
+
+		logger.info("Actor is retrieved successfully actorId:" + actorId);
 	}
-
-	@Test(dependsOnMethods = "getUser", enabled = true)
-	public void deleteUser() throws IOException, ParseException {
-		String delURI = "http://localhost:8080/api/deleteUserById/" + this.userId;
-
+	
+	@Test(dependsOnMethods = "getActor", enabled = true)
+	public void deleteActor() throws IOException, ParseException 
+	{
+		String delURI = "http://localhost:8080/api/deleteActorById/" + this.actorId;
 		String name = "Amansai";
 		String password = "Amansai10@";
 		String authString = name + ":" + password;
 		String authStringEnc = Base64.getEncoder().encodeToString(authString.getBytes());
 		System.out.println("Base64 encoded auth string: " + authStringEnc);
+		System.out.printf("deleteURI----", delURI);
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Accept", "application/json");
 		headers.add("Content-Type", "application/json");
 		headers.add("Authorization", "Basic " + authStringEnc);
 		HttpEntity<String> entity = new HttpEntity<String>(headers);
-		// DELETE Method to Delete existing user
+		//DELETE Method to Delete existing Actor
 		response = restTemplate.exchange(delURI, HttpMethod.DELETE, entity, String.class);
-		// Check if the status code is 204
+		//Check if the status code is 204
 		System.out.println("response code-------" + response.getStatusCode());
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.OK);
 	}
 
-	public static String getMessageFromResponse(String json) {
+	public static String getMessageFromResponse(String json)
+	{
 		String successMessageText = null;
 		try {
 			JSONParser parser = new JSONParser();
 			JSONObject jsonResponseObject = new JSONObject();
 			jsonResponseObject = (JSONObject) (parser.parse(json));
 			String successMessage = jsonResponseObject.get("success").toString();
-
 			jsonResponseObject = (JSONObject) (parser.parse(successMessage));
 			successMessageText = jsonResponseObject.get("text").toString();
 		} catch (org.json.simple.parser.ParseException e) {

@@ -2,140 +2,140 @@
 <testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-14T20:36:14 IST" name="Default suite" finished-at="2022-12-14T20:36:17 IST" duration-ms="3266">
+  <suite started-at="2022-12-15T18:46:53 IST" name="Default suite" finished-at="2022-12-15T18:46:57 IST" duration-ms="3364">
     <groups>
     </groups>
-    <test started-at="2022-12-14T20:36:14 IST" name="Default test" finished-at="2022-12-14T20:36:17 IST" duration-ms="3266">
-      <class name="com.javapoint.controller.MovieControllerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:14 IST" name="beforeTest" finished-at="2022-12-14T20:36:14 IST" duration-ms="6" status="PASS">
+    <test started-at="2022-12-15T18:46:53 IST" name="Default test" finished-at="2022-12-15T18:46:57 IST" duration-ms="3364">
+      <class name="com.javapoint.controllerTest.ReviewControllerTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:54 IST" name="beforeTest" finished-at="2022-12-15T18:46:54 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="addMovie()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:14 IST" name="addMovie" finished-at="2022-12-14T20:36:15 IST" duration-ms="509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addMovie -->
-        <test-method signature="updateMovie()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:15 IST" name="updateMovie" finished-at="2022-12-14T20:36:15 IST" depends-on-methods="com.javapoint.controller.MovieControllerTest.addMovie" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateMovie -->
-        <test-method signature="getMovie()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:15 IST" name="getMovie" finished-at="2022-12-14T20:36:15 IST" depends-on-methods="com.javapoint.controller.MovieControllerTest.updateMovie" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getMovie -->
-        <test-method signature="deleteMovie()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:15 IST" name="deleteMovie" finished-at="2022-12-14T20:36:15 IST" depends-on-methods="com.javapoint.controller.MovieControllerTest.getMovie" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteMovie -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controller.MovieControllerTest@2fb3536e]" started-at="2022-12-14T20:36:17 IST" name="afterTest" finished-at="2022-12-14T20:36:17 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.javapoint.controller.MovieControllerTest -->
-      <class name="com.javapoint.controller.UserControllerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:14 IST" name="beforeTest" finished-at="2022-12-14T20:36:14 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="addUser()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:15 IST" name="addUser" finished-at="2022-12-14T20:36:15 IST" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="updateUser()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:15 IST" name="updateUser" finished-at="2022-12-14T20:36:15 IST" depends-on-methods="com.javapoint.controller.UserControllerTest.addUser" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-        <test-method signature="getUser()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:15 IST" name="getUser" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.UserControllerTest.updateUser" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser -->
-        <test-method signature="deleteUser()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:16 IST" name="deleteUser" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.UserControllerTest.getUser" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controller.UserControllerTest@611889f4]" started-at="2022-12-14T20:36:17 IST" name="afterTest" finished-at="2022-12-14T20:36:17 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.javapoint.controller.UserControllerTest -->
-      <class name="com.javapoint.controller.ActorControllerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:14 IST" name="beforeTest" finished-at="2022-12-14T20:36:14 IST" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="addActor()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:16 IST" name="addActor" finished-at="2022-12-14T20:36:16 IST" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addActor -->
-        <test-method signature="updateActor()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:16 IST" name="updateActor" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.ActorControllerTest.addActor" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateActor -->
-        <test-method signature="getActor()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:16 IST" name="getActor" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.ActorControllerTest.updateActor" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getActor -->
-        <test-method signature="deleteActor()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:16 IST" name="deleteActor" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.ActorControllerTest.getActor" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteActor -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controller.ActorControllerTest@1da2cb77]" started-at="2022-12-14T20:36:17 IST" name="afterTest" finished-at="2022-12-14T20:36:17 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.javapoint.controller.ActorControllerTest -->
-      <class name="com.javapoint.controller.ReviewControllerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:14 IST" name="beforeTest" finished-at="2022-12-14T20:36:14 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="addReview()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:16 IST" name="addReview" finished-at="2022-12-14T20:36:16 IST" duration-ms="143" status="PASS">
+        <test-method signature="addReview()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:54 IST" name="addReview" finished-at="2022-12-15T18:46:54 IST" duration-ms="598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addReview -->
-        <test-method signature="updateReview()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:16 IST" name="updateReview" finished-at="2022-12-14T20:36:16 IST" depends-on-methods="com.javapoint.controller.ReviewControllerTest.addReview" duration-ms="131" status="PASS">
+        <test-method signature="updateReview()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:54 IST" name="updateReview" finished-at="2022-12-15T18:46:54 IST" depends-on-methods="com.javapoint.controllerTest.ReviewControllerTest.addReview" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReview -->
-        <test-method signature="getReview()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:16 IST" name="getReview" finished-at="2022-12-14T20:36:17 IST" depends-on-methods="com.javapoint.controller.ReviewControllerTest.updateReview" duration-ms="123" status="PASS">
+        <test-method signature="getReview()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:54 IST" name="getReview" finished-at="2022-12-15T18:46:55 IST" depends-on-methods="com.javapoint.controllerTest.ReviewControllerTest.updateReview" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReview -->
-        <test-method signature="deleteReview()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:17 IST" name="deleteReview" finished-at="2022-12-14T20:36:17 IST" depends-on-methods="com.javapoint.controller.ReviewControllerTest.getReview" duration-ms="115" status="PASS">
+        <test-method signature="deleteReview()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:55 IST" name="deleteReview" finished-at="2022-12-15T18:46:55 IST" depends-on-methods="com.javapoint.controllerTest.ReviewControllerTest.getReview" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteReview -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controller.ReviewControllerTest@48f278eb]" started-at="2022-12-14T20:36:17 IST" name="afterTest" finished-at="2022-12-14T20:36:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controllerTest.ReviewControllerTest@31ea9581]" started-at="2022-12-15T18:46:57 IST" name="afterTest" finished-at="2022-12-15T18:46:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.javapoint.controller.ReviewControllerTest -->
-      <class name="com.javapoint.controller.RoleControllerTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:14 IST" name="beforeTest" finished-at="2022-12-14T20:36:14 IST" duration-ms="4" status="PASS">
+      </class> <!-- com.javapoint.controllerTest.ReviewControllerTest -->
+      <class name="com.javapoint.controllerTest.ActorControllerTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:53 IST" name="beforeTest" finished-at="2022-12-15T18:46:54 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="addRole()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:17 IST" name="addRole" finished-at="2022-12-14T20:36:17 IST" duration-ms="127" status="PASS">
+        <test-method signature="addActor()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:55 IST" name="addActor" finished-at="2022-12-15T18:46:55 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRole -->
-        <test-method signature="updateRole()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:17 IST" name="updateRole" finished-at="2022-12-14T20:36:17 IST" depends-on-methods="com.javapoint.controller.RoleControllerTest.addRole" duration-ms="124" status="PASS">
+        </test-method> <!-- addActor -->
+        <test-method signature="updateActor()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:55 IST" name="updateActor" finished-at="2022-12-15T18:46:55 IST" depends-on-methods="com.javapoint.controllerTest.ActorControllerTest.addActor" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateRole -->
-        <test-method signature="getRole()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:17 IST" name="getRole" finished-at="2022-12-14T20:36:17 IST" depends-on-methods="com.javapoint.controller.RoleControllerTest.updateRole" duration-ms="121" status="PASS">
+        </test-method> <!-- updateActor -->
+        <test-method signature="getActor()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:55 IST" name="getActor" finished-at="2022-12-15T18:46:55 IST" depends-on-methods="com.javapoint.controllerTest.ActorControllerTest.updateActor" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRole -->
-        <test-method signature="deleteRole()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:17 IST" name="deleteRole" finished-at="2022-12-14T20:36:17 IST" depends-on-methods="com.javapoint.controller.RoleControllerTest.getRole" duration-ms="117" status="PASS">
+        </test-method> <!-- getActor -->
+        <test-method signature="deleteActor()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:55 IST" name="deleteActor" finished-at="2022-12-15T18:46:55 IST" depends-on-methods="com.javapoint.controllerTest.ActorControllerTest.getActor" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteRole -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controller.RoleControllerTest@2f217633]" started-at="2022-12-14T20:36:17 IST" name="afterTest" finished-at="2022-12-14T20:36:17 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- deleteActor -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controllerTest.ActorControllerTest@4d1c005e]" started-at="2022-12-15T18:46:57 IST" name="afterTest" finished-at="2022-12-15T18:46:57 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.javapoint.controller.RoleControllerTest -->
+      </class> <!-- com.javapoint.controllerTest.ActorControllerTest -->
+      <class name="com.javapoint.controllerTest.RoleControllerTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:54 IST" name="beforeTest" finished-at="2022-12-15T18:46:54 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="addRole()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:56 IST" name="addRole" finished-at="2022-12-15T18:46:56 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRole -->
+        <test-method signature="updateRole()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:56 IST" name="updateRole" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.RoleControllerTest.addRole" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRole -->
+        <test-method signature="getRole()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:57 IST" name="getRole" finished-at="2022-12-15T18:46:57 IST" depends-on-methods="com.javapoint.controllerTest.RoleControllerTest.updateRole" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRole -->
+        <test-method signature="deleteRole()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:57 IST" name="deleteRole" finished-at="2022-12-15T18:46:57 IST" depends-on-methods="com.javapoint.controllerTest.RoleControllerTest.getRole" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRole -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controllerTest.RoleControllerTest@5ddeb7cb]" started-at="2022-12-15T18:46:57 IST" name="afterTest" finished-at="2022-12-15T18:46:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.javapoint.controllerTest.RoleControllerTest -->
+      <class name="com.javapoint.controllerTest.MovieControllerTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:54 IST" name="beforeTest" finished-at="2022-12-15T18:46:54 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="addMovie()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:56 IST" name="addMovie" finished-at="2022-12-15T18:46:56 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMovie -->
+        <test-method signature="updateMovie()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:56 IST" name="updateMovie" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.MovieControllerTest.addMovie" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateMovie -->
+        <test-method signature="getMovie()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:56 IST" name="getMovie" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.MovieControllerTest.updateMovie" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMovie -->
+        <test-method signature="deleteMovie()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:56 IST" name="deleteMovie" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.MovieControllerTest.getMovie" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMovie -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controllerTest.MovieControllerTest@24569dba]" started-at="2022-12-15T18:46:57 IST" name="afterTest" finished-at="2022-12-15T18:46:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.javapoint.controllerTest.MovieControllerTest -->
+      <class name="com.javapoint.controllerTest.UserControllerTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:54 IST" name="beforeTest" finished-at="2022-12-15T18:46:54 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="addUser()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:55 IST" name="addUser" finished-at="2022-12-15T18:46:55 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+        <test-method signature="updateUser()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:55 IST" name="updateUser" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.UserControllerTest.addUser" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="getUser()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:56 IST" name="getUser" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.UserControllerTest.updateUser" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+        <test-method signature="deleteUser()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:56 IST" name="deleteUser" finished-at="2022-12-15T18:46:56 IST" depends-on-methods="com.javapoint.controllerTest.UserControllerTest.getUser" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.javapoint.controllerTest.UserControllerTest@8462f31]" started-at="2022-12-15T18:46:57 IST" name="afterTest" finished-at="2022-12-15T18:46:57 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.javapoint.controllerTest.UserControllerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

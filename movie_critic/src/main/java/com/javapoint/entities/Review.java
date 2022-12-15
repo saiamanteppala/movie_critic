@@ -31,6 +31,10 @@ public class Review {
 	public Review() {
 		super();
 	}
+
+	public Review(int review_id, String movie_reviews, double movie_ratings, String content) {
+	}
+	
 	public Review(int review_id, String movie_reviews, double movie_ratings, String content, Movie movie, User user) {
 		super();
 		this.review_id = review_id;
@@ -40,4 +44,5 @@ public class Review {
 		this.movie = movie;
 		this.user = user;
 	}
+
 }

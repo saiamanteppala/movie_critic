@@ -59,4 +59,8 @@ public class Movie {
 		this.actor = actor;
 	}
 
+	public Movie(int i, String string, String string2, String string3, String string4, int j, String string5,
+			String string6) {
+	}
+
 }
