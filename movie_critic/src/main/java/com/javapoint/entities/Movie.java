@@ -3,6 +3,8 @@ package com.javapoint.entities;
 import java.time.LocalTime;
 import java.util.*;
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
@@ -31,7 +33,8 @@ public class Movie {
 	@Column(columnDefinition = "MEDIUMBLOB")
 	private String movie_poster;
 
-	@JsonManagedReference
+
+	@JsonManagedReference 
 	@OneToMany(mappedBy = "movie", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private List<Review> review;
 

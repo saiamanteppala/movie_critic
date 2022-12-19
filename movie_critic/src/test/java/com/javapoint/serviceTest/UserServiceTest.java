@@ -28,14 +28,14 @@ class UserServiceTest {
 	@Test
 	public void getUserTest() {
 		when(userRepo.findAll()).thenReturn((List<User>) 
-		Stream.of(new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "amansaileo","password"))
+		Stream.of(new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "password"))
 				.collect(Collectors.toList()));
 		assertEquals(1, userService.getAllUserDetails().size());
 	}
 
 	@Test
 	public void saveUserTest() {
-		User user = new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "amansaileo","password");
+		User user = new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "password");
 		when(userRepo.save(user)).thenReturn(user);
 		assertEquals(user, userService.saveUserDetails(user));
 	}
@@ -43,14 +43,14 @@ class UserServiceTest {
 	@Test
 	public void getUserByIdTest() {
 		int id = 1;
-		User user = new User(1, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "amansaileo","password");
+		User user = new User(1, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "password");
 		when(userRepo.findById(1)).thenReturn((user));
 		assertEquals(user, userService.getUserDetailsById(id));
 	}
 
 	@Test
 	public void deleteUserTest() {
-		User user = new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com", "amansaileo",
+		User user = new User(5, "Amansai", "Teppala", "male", 25, "6302633877", "amansaileo@gmail.com",
 				"password");
 		userService.deleteUserById(1);
 		verify(userRepo, times(0)).delete(user);

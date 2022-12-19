@@ -15,6 +15,6 @@ public class SecurityCofiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception 
 	{
 
-		http.csrf().disable().authorizeHttpRequests().anyRequest().authenticated().and().httpBasic();
+		http.cors().and().csrf().disable().authorizeRequests().anyRequest().authenticated().and().httpBasic();
 	}
 }

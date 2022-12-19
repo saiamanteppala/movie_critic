@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.javapoint.controller.dto.UserRegistrationDto;
 import com.javapoint.service.RegistrationService;
-@CrossOrigin("*")
+@CrossOrigin(origins ="*", maxAge = 3600)
 @RestController
 @RequestMapping("/registration")
 public class RegistrationController {

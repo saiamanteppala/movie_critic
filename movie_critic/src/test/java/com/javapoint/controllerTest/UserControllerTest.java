@@ -50,7 +50,7 @@ class UserControllerTest {
 		logger.info("Add URL :" + addURI);
 		String jsonBody = "{ \"first_name\":\"Aman\",\n" + "\"last_name\":\"Sai\",\n" + "\"gender\":\"male\",\n"
 				+ "\"age\":\"23\",\n" + "\"contact_number\":\"12345678\",\n" + "\"email\": \"amansaileo@gmail.com\",\n"
-				+ "\"user_name\":\"Amansaileo\",\n" + "\"password\": \"123456789\"}";
+				 + "\"password\": \"123456789\"}";
 		System.out.println("\n\n" + jsonBody);
 		HttpEntity<String> entity = new HttpEntity<String>(jsonBody, headers);
 		// POST Method to Add New user

@@ -16,7 +16,6 @@ public class User {
 	private int age;
 	private String contact_number;
 	private String email;
-	private String user_name;
 	private String password;
 
 
@@ -25,11 +24,11 @@ public class User {
 			@JoinColumn(name = "role_id") })
 	private Collection<Role> roles = new HashSet<>();
 
-	public User(int id, String first_name, String last_name, String gender, int age, String contact_number, String email, String user_name, String password) {
+	public User(int id, String first_name, String last_name, String gender, int age, String contact_number, String email, String password) {
 		super();	
 	}
 	public User(int user_id,String first_name, String last_name, String gender, int age, String contact_number, String email,
-			String user_name, String password, List<Role> roles) {
+			 String password, List<Role> roles) {
 		super();
 		this.user_id = user_id;
 		this.first_name = first_name;
@@ -38,7 +37,6 @@ public class User {
 		this.age = age;
 		this.contact_number = contact_number;
 		this.email = email;
-		this.user_name = user_name;
 		this.password = password;
 		this.roles = roles;
 	}

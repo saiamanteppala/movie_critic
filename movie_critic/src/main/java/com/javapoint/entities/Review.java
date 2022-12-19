@@ -20,8 +20,7 @@ public class Review {
 
 	private String content;
 
-
-	@JsonBackReference
+	@JsonBackReference 
 	@ManyToOne(fetch = FetchType.EAGER )
 	private Movie movie;
 

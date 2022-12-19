@@ -14,13 +14,5 @@ public class MovieCriticApplication {
 		SpringApplication.run(MovieCriticApplication.class, args);
 	}
 
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return (WebMvcConfigurer) new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("*");
-			}
-		};
-	}
+
 }

@@ -25,7 +25,6 @@ public class RegistrationServiceImpl implements RegistrationService {
 							 userRegistrationDto.getAge(), 
 							 userRegistrationDto.getContact(),
 							 userRegistrationDto.getEmail(), 
-							 userRegistrationDto.getUser_name(),
 							 null, Arrays.asList(new Role("ROLE_USER")));
 		return userRepo.save(user);
 	}

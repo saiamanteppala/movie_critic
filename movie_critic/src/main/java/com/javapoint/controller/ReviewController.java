@@ -14,7 +14,7 @@ import com.javapoint.entities.Review;
 import com.javapoint.repository.UserRepo;
 import com.javapoint.service.MovieService;
 import com.javapoint.service.ReviewService;
-@CrossOrigin("*")
+@CrossOrigin(origins ="*", maxAge = 3600)
 @RestController
 @RequestMapping("/api")
 
